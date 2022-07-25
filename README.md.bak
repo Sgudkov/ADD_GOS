@@ -14,7 +14,8 @@ For example you need to add this functionality to transaction FR58. In standard 
 In this example document number using like a object key.
 
 This example which we mentioned above.
- 
+
+
 *Added in PBO*
 ```abap
 IF go_myobject IS INITIAL AND g_con_info-belnr IS INITIAL.
