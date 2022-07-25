@@ -4,7 +4,7 @@
 ### This example allow you to add standard button GOS with full functionality.
 
 > Method LCL_GOS=>GET_INSTANCE(Singleton) return self-example with already created instance of class CL_GOS_MANAGER.
-This standard class used to work with GOS functionality, and also adding button ![alt text](https://github.com/Sgudkov/ADD_GOS/blob/main/GOS_button.png "GOS button") to your screen.
+This standard class used to work with GOS functionality, and also adding button ![alt text](https://github.com/Sgudkov/ADD_GOS/blob/main/GOS_button.jpg) to your screen.
 
 > Method LCL_GOS->COPY_GOS_LINK can use for copy already created data to new object.
 
