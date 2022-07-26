@@ -15,7 +15,7 @@ In this example document number using like a object key.
 
 This example which we mentioned above.
  
-*Added in PBO*
+*Added in PBO in end of form 'va_funds_init_1_pbo'*
 ```abap
 IF go_myobject IS INITIAL AND g_con_info-belnr IS INITIAL.
 
@@ -43,12 +43,13 @@ IF go_myobject IS INITIAL AND g_con_info-belnr IS INITIAL.
 
 ENDIF.
 ```
-*Added after post data*
+
+> Internal table *lt_services* use for exclude some services. See all available services in table 'SGOSATTR'. 
+> Set parameter 'iv_no_commit' to X doesn't create raw in DB. It's usfull for our example.
+
+*Added after post data in begining of form 'control_terminate_main'*
 ```abap
  IF go_gos_additional IS NOT INITIAL AND g_con_info-bpdk_belnr IS NOT INITIAL.
    go_gos_additional->copy_gos_link( EXPORTING iv_objkey = g_con_info-bpdk_belnr ).
  ENDIF.
 ```	
-
-> Internal table *lt_services* use for exclude some services. See all available services in table 'SGOSATTR'. 
-> Set parameter 'iv_no_commit' to X doesn't create raw in DB. It's usfull for our example.
