@@ -10,7 +10,7 @@ This standard class used to work with GOS functionality, and also adding button 
 
 ### Propose usage.
 
-For example you need to add this functionality to transaction FR58. In standard t-code it doesn't available, because we don't have yet document number.
+For example you need to add this functionality to transaction FR58. In standard t-code this button doesn't available, because we don't have yet document number.
 In this example document number using like a object key.
 
 This example which we mentioned above.
@@ -43,6 +43,10 @@ IF go_myobject IS INITIAL AND g_con_info-belnr IS INITIAL.
 
 ENDIF.
 ```
+
+> Internal table *lt_services* use for exclude some services. See all available services in table 'SGOSATTR'. 
+> Set parameter 'iv_no_commit' to X doesn't create raw in DB. It's usfull for our example.
+
 *Added after post data*
 ```abap
  IF go_gos_additional IS NOT INITIAL AND g_con_info-bpdk_belnr IS NOT INITIAL.

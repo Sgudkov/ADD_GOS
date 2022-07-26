@@ -4,13 +4,13 @@
 ### This example allow you to add standard button GOS with full functionality.
 
 > Method LCL_GOS=>GET_INSTANCE(Singleton) return self-example with already created instance of class CL_GOS_MANAGER.
-This standard class used to work with GOS functionality, and also adding button ![alt text](https://github.com/Sgudkov/ADD_GOS/blob/main/GOS_button.png "GOS button") to your screen.
+This standard class used to work with GOS functionality, and also adding button ![alt text](https://github.com/Sgudkov/ADD_GOS/blob/main/GOS_button.jpg) to your screen.
 
 > Method LCL_GOS->COPY_GOS_LINK can use for copy already created data to new object.
 
 ### Propose usage.
 
-For example you need to add this functionality to transaction FR58. In standard t-code it doesn't available, because we don't have yet document number.
+For example you need to add this functionality to transaction FR58. In standard t-code this button doesn't available, because we don't have yet document number.
 In this example document number using like a object key.
 
 This example which we mentioned above.
@@ -49,3 +49,6 @@ ENDIF.
    go_gos_additional->copy_gos_link( EXPORTING iv_objkey = g_con_info-bpdk_belnr ).
  ENDIF.
 ```	
+
+> Internal table *lt_services* use for exclude some services. See all available services in table 'SGOSATTR'. 
+> Set parameter 'iv_no_commit' to X doesn't create raw in DB. It's usfull for our example.
