@@ -46,6 +46,7 @@ ENDIF.
 
 
 > Internal table *lt_services* use for exclude some services. See all available services in table 'SGOSATTR'. 
+
 > Set parameter 'iv_no_commit' to X doesn't create raw in DB. It's usfull for our example.
 
 
