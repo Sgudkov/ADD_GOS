@@ -8,7 +8,7 @@ This standard class used to work with GOS functionality, and also adding button 
 
 > Method LCL_GOS->COPY_GOS_LINK can use for copy already created data to new object.
 
-### Propose usage.
+### Usage.
 
 For example you need to add this functionality to transaction FR58. In standard t-code this button doesn't available, because we don't have yet document number.
 In this example document number using like a object key.
